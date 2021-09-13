@@ -1,0 +1,55 @@
+body {
+  background-color: DarkGray;
+  margin: 0px;
+  padding: 10px;
+  font-family: "Arial";
+}
+
+header {
+  background-color: LightGray;
+  margin-bottom: 10px;
+  padding: 0px 10px;
+  border: solid LightGray;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px Black;
+}
+
+.home a {
+  color: black;
+  text-decoration: none;
+}
+
+.main {
+  background-color: LightGray;
+  margin: 0px;
+  width: auto;
+  border: solid LightGray;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px Black;
+  text-align: center;
+}
+
+.step {
+  border: solid DarkGray;
+  border-radius: 10px;
+  width: 400px;
+  margin: 5px auto;
+  text-align: center;
+}
+
+p {
+  width: fit-content;
+}
+
+input {
+  width: 15ch;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+}
+
+button {
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+}

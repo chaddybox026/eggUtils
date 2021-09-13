@@ -4,25 +4,58 @@
 
     <meta charset="utf-8">
     <title>Contract Egg Projection</title>
+    <link rel="stylesheet" href="../master.css">
     <script src="./contractProjection.js"></script>
 
   </head>
+
   <body>
 
-    <div>
+    <header class="home">
 
-      <p>Farm Population: <input type="number" id="_chkPop" value="0"></p>
-      <p>Interal Hatchery Rate: <input type="number" id="_chkRate" value="0"></p>
-      <p>Internal Hatchery Calm Level: <input type="number" id="_rateCalm" value="0"></p>
-      <p>Eggs Delivered: <input type="number" id="_eggDel" value="0"></p>
-      <p>Egg Laying Rate: <input type="number" id="_eggRate" value="0"></p>
-      <p>Contract Due (in hours): <input type="number" id="_due" value="0"></p>
+      <h2><a href="../">Chadwick Bettale's Egg, Inc. Utilities</a></h2>
+      <h3>Contract Projection</h3>
 
-      <button onclick="calcEggProj()">Calculate Egg Projection</button>
+    </header>
 
-      <p id="output"></p>
+    <div class="main">
+
+      <p>This tool is for more accurately projecting the eggs that will be delivered in a contract.<br>This tool does <b>NOT</b> <i>(yet)</i> take into account full habs or shipping limitations.</p>
+
+      <div class="step">
+
+        <h3>Step 1: Main Menu > Stats</h3>
+
+        <p>Farm Population: <input id="_chkPop" value="0"> chickens</p>
+        <p>Egg Laying Rate: <input id="_eggRate" value="0"> eggs/min</p>
+        <p>Interal Hatchery Rate: <input id="_chkRate" value="0"> chickens/min/hab</p>
+        <p>Number of Habs: <input id="_numHabs" value="4"> habs</p>
+
+      </div>
+
+      <div class="step">
+
+        <h3>Step 2: Epic Research Level</h3>
+
+        <p>Internal Hatchery Calm Level: <input id="_rateCalm" value="0"></p>
+
+      </div>
+
+      <div class="step">
+
+        <h3>Step 3: Contract farm information</h3>
+
+        <p>Eggs Delivered: <input id="_eggDel" value="0"> eggs</p>
+        <p>Contract Due in <input id="_due" value="0"> hour(s)</p>
+
+      </div>
+
+      <button onclick="calcEggProj();">Calculate Egg Projection</button>
+
+      <p>Projected Eggs Delievered: <input id="output" value="0" style="text-align: center;" readonly></p></p>
 
     </div>
 
   </body>
+
 </html>
