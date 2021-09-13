@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Contract Egg Projection</title>
+    <script src="./contractProjection.js"></script>
+
+  </head>
+  <body>
+
+    <div>
+
+      <p>Farm Population: <input type="number" id="_chkPop" value="0"></p>
+      <p>Interal Hatchery Rate: <input type="number" id="_chkRate" value="0"></p>
+      <p>Internal Hatchery Calm Level: <input type="number" id="_rateCalm" value="0"></p>
+      <p>Eggs Delivered: <input type="number" id="_eggDel" value="0"></p>
+      <p>Egg Laying Rate: <input type="number" id="_eggRate" value="0"></p>
+      <p>Contract Due (in hours): <input type="number" id="_due" value="0"></p>
+
+      <button onclick="calcEggProj()">Calculate Egg Projection</button>
+
+      <p id="output"></p>
+
+    </div>
+
+  </body>
+</html>
