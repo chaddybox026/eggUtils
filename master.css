@@ -1,55 +1,76 @@
+:root {
+  --rad: 20px;
+}
+
 body {
-  background-color: DarkGray;
+  background-color: lightskyblue;
   margin: 0px;
-  padding: 10px;
+  padding: 20px;
   font-family: "Arial";
 }
 
 header {
-  background-color: LightGray;
-  margin-bottom: 10px;
-  padding: 0px 10px;
-  border: solid LightGray;
-  border-radius: 10px;
+  background-color: azure;
+  margin-bottom: 20px;
+  padding: 0px 5px;
+  border: 5px solid DarkGray;
+  border-radius: var(--rad);
   box-shadow: 0px 0px 10px Black;
 }
 
 .home a {
+  padding: 0px;
   color: black;
   text-decoration: none;
 }
 
+.home a:hover {
+  background-color: gainsboro;
+  border-radius: var(--rad)
+}
+
+.title {
+  padding: 0px 0px 0px 0px;
+}
+
 .main {
-  background-color: LightGray;
+  background-color: azure;
   margin: 0px;
-  width: auto;
-  border: solid LightGray;
-  border-radius: 10px;
+  padding: var(--rad);
+  border: 5px solid darkgray;
+  border-radius: var(--rad);
   box-shadow: 0px 0px 10px Black;
   text-align: center;
 }
 
+.main p {
+  margin: 0px;
+  padding: 0.25em;
+}
+
 .step {
+  background-color: gainsboro;
   border: solid DarkGray;
   border-radius: 10px;
-  width: 400px;
+  width: 50%;
+  min-width: 500px;
   margin: 5px auto;
   text-align: center;
 }
 
-p {
-  width: fit-content;
-}
-
 input {
+  background-color: azure;
   width: 15ch;
+  border-width: 0px 0px 2px 0px;
   border-radius: 5px;
   font-size: 16px;
   text-align: center;
 }
 
 button {
+  background-color: azure;
   padding: 5px;
+  border-width: 0px 0px 2px 0px;
   border-radius: 5px;
   font-size: 16px;
 }

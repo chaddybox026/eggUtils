@@ -2,7 +2,7 @@ var
   chkPop = 0, //chk
   eggDel = 0, //egg
   chkRate = 0, //chk/min
-  numHabs = 1, //number of hatcheries
+  numHabs = 0, //number of hatcheries
   rateCalm = 0, //level
   eggRate = 0, //egg/min
   eggPerChkRate = 0, //egg/chk/min
@@ -31,7 +31,11 @@ function calcEggProj() {
     + ( getEggChkRate() * chkPop ) * dueMins
     + eggDel * 1;
 
-  document.getElementById("output").value = Number.parseFloat(calc).toExponential(2);
+  document.getElementById("eggOut").value = Number.parseFloat(calc).toExponential(2);
+
+  calc = ( chkRate * dueMins ) + ( chkPop * 1 );
+
+  document.getElementById("popOut").value = Number.parseFloat(calc);
 
 }
 

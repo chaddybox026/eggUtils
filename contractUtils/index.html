@@ -13,8 +13,8 @@
 
     <header class="home">
 
-      <h2><a href="../">Chadwick Bettale's Egg, Inc. Utilities</a></h2>
-      <h3>Contract Projection</h3>
+      <h2 class="title"><a href="../">Chadwick Bettale's Egg, Inc. Utilities</a></h2>
+      <h3 class="title">Contract Projection</h3>
 
     </header>
 
@@ -26,9 +26,9 @@
 
         <h3>Step 1: Main Menu > Stats</h3>
 
-        <p>Farm Population: <input id="_chkPop" value="0"> chickens</p>
-        <p>Egg Laying Rate: <input id="_eggRate" value="0"> eggs/min</p>
-        <p>Interal Hatchery Rate: <input id="_chkRate" value="0"> chickens/min/hab</p>
+        <p>Farm Population: <input id="_chkPop" value="15000000"> chickens</p>
+        <p>Egg Laying Rate: <input id="_eggRate" value="3000000000"> eggs/min</p>
+        <p>Interal Hatchery Rate: <input id="_chkRate" value="3500"> chickens/min/hab</p>
         <p>Number of Habs: <input id="_numHabs" value="4"> habs</p>
 
       </div>
@@ -37,7 +37,7 @@
 
         <h3>Step 2: Epic Research Level</h3>
 
-        <p>Internal Hatchery Calm Level: <input id="_rateCalm" value="0"></p>
+        <p>Internal Hatchery Calm Level: <input id="_rateCalm" value="5"></p>
 
       </div>
 
@@ -45,14 +45,22 @@
 
         <h3>Step 3: Contract farm information</h3>
 
-        <p>Eggs Delivered: <input id="_eggDel" value="0"> eggs</p>
-        <p>Contract Due in <input id="_due" value="0"> hour(s)</p>
+        <p>Eggs Delivered: <input id="_eggDel" value="12000000000000"> eggs</p>
+        <p>Contract Due in <input id="_due" value="48"> hour(s)</p>
 
       </div>
 
-      <button onclick="calcEggProj();">Calculate Egg Projection</button>
+      <div class="step">
 
-      <p>Projected Eggs Delievered: <input id="output" value="0" style="text-align: center;" readonly></p></p>
+        <h3>Step 4: Results</h3>
+
+        <button onclick="calcEggProj();">Calculate Projection</button>
+
+        <p>Projected Eggs Delievered: <input id="eggOut" value="3.81e+13" style="text-align: center;" readonly></p>
+
+        <p>Projected Farm Population: <input id="popOut" value="25080000" style="text-align: center;" readonly></p>
+
+      </div>
 
     </div>
 
